@@ -28,5 +28,5 @@ return db.monster.update({
 return null
 }
 
-export const deleteEmployee = async (id) =>
-  db.employee.delete({ where: { employeeId: id } })
+export const deleteMonster = async (id) =>
+  db.monster.delete({ where: { monsterId: id } })
