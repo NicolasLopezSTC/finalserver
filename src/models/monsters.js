@@ -1,7 +1,7 @@
 import db from '../utils/db'
 
 export const getMonsters = async (skip, take) => {
-const count = await db.employee.count()
+const count = await db.monster.count()
 const monsters=  await db.monster.findMany({
   skip,
   take,
