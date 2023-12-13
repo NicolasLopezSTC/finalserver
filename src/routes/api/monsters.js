@@ -2,7 +2,7 @@ import { Router } from 'express'
 
 import {
   getMonster,
-  getMonster,
+  getMonsters,
   addMonster,
   deleteMonster,
 } from '../../models/monsters'
