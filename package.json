@@ -1,7 +1,7 @@
 {
-  "name": "final-server2",
+  "name": "finalserver",
   "version": "1.0.0",
-  "description": "finalserver2",
+  "description": "finalserver",
   "main": "src/index.js",
   "scripts": {
     "build": "babel ./src --out-dir ./build",
