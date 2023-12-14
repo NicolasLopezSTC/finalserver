@@ -23,17 +23,17 @@ router.get('/', async (req, res) => {
 })
 
 router.get('/:id', async (req, res) => {
-  const monster = await getMonster(req.params.id)
-  if (monster) {
-    res.send(monster)
+  const monsters = await getMonster(req.params.id)
+  if (monsters) {
+    res.send(monsters)
   } else {
     res.status(404).send({ msg: 'Monster not found' })
   }
 })
 
 router.post('/', async (req, res) => {
-  const monster = await addMonster(req.body)
-  res.send(monster)
+  const monsters = await addMonster(req.body)
+  res.send(monsters)
 })
 
 router.get('/:id', async (req, res) => {

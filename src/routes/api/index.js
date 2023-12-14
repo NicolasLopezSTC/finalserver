@@ -2,7 +2,7 @@ import { Router } from 'express'
 import basicAuth from 'express-basic-auth'
 
 
-import employees from './employees'
+import monsters from './monsters'
 
 const router = Router()
 
@@ -21,6 +21,6 @@ router.get('/', (req, res) => {
 
 
 
-router.use('/employees', employees)
+router.use('/monsters', monsters)
 
 export default router
